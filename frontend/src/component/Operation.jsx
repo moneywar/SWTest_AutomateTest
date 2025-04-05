@@ -40,7 +40,6 @@ function Operation() {
             />
             <div className='button-container'>
                 <button className='btn' onClick={handleAddNumber}>+</button> {/* Call the API on button click */}
-                <button className='btn'>-</button>
             </div>
         </div>
     );

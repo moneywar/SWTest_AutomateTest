@@ -1,7 +1,9 @@
-const express = require('express');
-const cors = require('cors');
+// const express = require('express');
+// const cors = require('cors');
+import express from 'express';
+import cors from 'cors';
 
-const {addNumber, subtract} = require('./utils.js')
+import {addNumber} from './utils.js';
 
 const port = 3001;
 const app = express();
@@ -25,12 +27,6 @@ app.post('/add-number', async (req, res) => {
     res.json({ result });
 });
 
-app.post('/subtract', (req, res) => {
-    const { a, b } = req.body;
-    const result = subtract(a, b);
-    res.json({ result });
-});
-
 // GET endpoint to get the current number
 app.get('/get-number', (req, res) => {
     res.json({ number: currentNumber });
@@ -41,4 +37,4 @@ app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
 
-module.exports = app
+module.exports = app; // Export the app for testing
