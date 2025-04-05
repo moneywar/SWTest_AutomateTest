@@ -1,0 +1,21 @@
+.warpper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;  
+  height: 100px; 
+  margin: 20px;
+  background-color: aquamarine;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+} 
+
