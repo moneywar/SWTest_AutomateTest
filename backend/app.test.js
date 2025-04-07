@@ -13,7 +13,6 @@ describe('API Test', () => {
       .post('/add-number')
       .send({ number: 10 });
 
-    console.log(res.body);
     expect(res.statusCode).toBe(200);
     expect(typeof res.body.result).toBe('number');
   });
