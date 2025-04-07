@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Number component snapshot testing matches snapshot with mock context 1`] = `
+<DocumentFragment>
+  <div
+    class="warpper"
+  >
+    <div
+      class="box"
+    >
+      <p>
+        5
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
