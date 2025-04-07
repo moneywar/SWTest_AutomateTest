@@ -11,8 +11,8 @@ export function fetchData() {
 
 // Function that uses fetchData
 export function calculateTotal() {
-    const data = this.fetchData(); // Calls the unfinished fetchData
+    const data = fetchData(); // Call fetchData directly instead of using 'this'
     return data.reduce((total, num) => total + num, 0); // Summing up data
 }
 
-// module.exports = { addNumber, fetchData, calculateTotal };
+module.exports = { addNumber, fetchData, calculateTotal };
